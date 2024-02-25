@@ -1,42 +1,31 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo a {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 40px; /* Ajusta el tamaño de tu logo según sea necesario */
-    margin-right: 10px;
-  }
-  
-  .right-section a {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #862525;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 170px; /* Ajusta el tamaño de tu logo según sea necesario */
+  margin-right: 52px;
+}
+
+.right-section a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}

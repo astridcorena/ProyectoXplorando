@@ -1,20 +1,19 @@
 import React from "react";
 import logo from "./logo.svg";
+import { Home } from "./Pages/Home";
 import "./App.css";
 import { Header } from "./Components/Header";
 import { Route, Router, Routes, BrowserRouter } from "react-router-dom";
 
-function Home() {
-  return <div className="home">home</div>;
-}
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Header />
+        <div className="mt-16"></div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<Home/>} />
         </Routes>
       </div>
     </BrowserRouter>
