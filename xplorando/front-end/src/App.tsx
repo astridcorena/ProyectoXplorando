@@ -4,7 +4,8 @@ import { Home } from "./Pages/Home";
 import "./App.css";
 import { Header } from "./Components/Header";
 import { Route, Router, Routes, BrowserRouter } from "react-router-dom";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

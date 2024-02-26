@@ -2,20 +2,24 @@ import React from "react";
 import Breadcrumb from "../Components/Breadcrumb"
 import { useLocation } from "react-router-dom";
 import { BreadcrumbItem } from "../types";
+import Galeriaimagenes from "../Components/Galeriaimagenes";
+import Body from "../Components/Body";
 
 export function Home() {
-  const { pathname } = useLocation();
+
+  const arrayImagenes = [
+    "/imagen1.jpg",
+    "/imagen2.jpg",
+    "/imagen3.jpg"
+  ] 
+
+  return <div><Breadcrumb/>
+  {/* <Galeriaimagenes images = {arrayImagenes}/> */}
+  <div>Turismo aventura</div>
+  <div>Producto</div>
+  <div>Detalle del producto</div>
+  <div><Body/></div>
+
   
-  // Split the pathname and remove the first empty string if the path starts with '/'
-  const paths = pathname.split('/').filter(Boolean);
-
-  const breadcrumbs: BreadcrumbItem[] = paths.map((path, index) => {
-    // Reconstruct the path up to this part of the URL
-    const url = `/${paths.slice(0, index + 1).join('/')}`; //Capitalize the first letter and replace dashes with spaces
-    const title = path.replace(/-/g, ' ').replace(/(^\w|\s\w)/g, m => m.toUpperCase());
-
-    return { path: url, title };
-  });
-  return <div>Home<Breadcrumb crumbs={breadcrumbs}/>
-  </div>;
+  </div>
 }

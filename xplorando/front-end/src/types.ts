@@ -4,8 +4,3 @@ export interface BreadcrumbItem {
     path: string;
   }
   
-  // Define a type for the component props
- export interface BreadcrumbProps {
-    crumbs: BreadcrumbItem[];
-  }
-  
